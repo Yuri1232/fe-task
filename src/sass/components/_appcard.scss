@@ -1,0 +1,23 @@
+.appCard {
+  display: flex;
+  border: 1px solid #1f343e;
+  border-radius: 16px;
+  width: 20.3%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &_title {
+      font: normal normal normal 1.6rem/1.6rem "Noto Sans";
+      color: $color-white;
+    }
+    &_text {
+      font: normal normal bold 2rem/1.6rem "Gadugi";
+      color: $color-white;
+    }
+  }
+}

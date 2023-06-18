@@ -1,0 +1,45 @@
+.step {
+  width: 100%;
+  max-width: 448px;
+
+  display: flex;
+  gap: 5.6rem;
+  justify-content: center;
+  align-items: center;
+
+  &__num {
+    text-align: left;
+    color: $color-blue;
+    letter-spacing: 1.6px;
+    margin-bottom: 16px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &__wrapper_text {
+    align-self: center;
+  }
+
+  &__wrapper_text h3:nth-child(2) {
+    font-size: 3.2rem;
+    font-family: "Caveat Brush", sans-serif;
+    font-weight: normal;
+    margin-bottom: 16px;
+    align-self: center;
+  }
+  &__wrapper_text p {
+    font-size: 2rem;
+    font-weight: normal;
+    align-self: center;
+    line-height: 3rem;
+    color: $color-gray;
+  }
+}
+
+.step:nth-of-type(2) {
+  flex-direction: row-reverse;
+  margin-bottom: 8rem;
+}
+
+.step:nth-of-type(1) {
+  margin-bottom: 8rem;
+}

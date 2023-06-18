@@ -1,0 +1,27 @@
+.btn {
+  width: 100%;
+  max-width: 416px;
+  height: 64px;
+  background-color: $color-blue;
+  border: 1px solid $color-gray;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: opacity 0.1s ease-out;
+
+  &--name {
+    align-self: center;
+    font: normal normal bold 2rem/3.2rem "Noto Sans";
+    color: $color-white;
+  }
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+.btn:active {
+  opacity: 1;
+}
