@@ -1,0 +1,120 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 64px 200px;
+  background-color: $color-secondary;
+  gap: 128px;
+  height: 100%;
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 64px 30px;
+    gap: 64px;
+  }
+  &__copyright {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    &_logo {
+      margin-bottom: 32px;
+      width: 125px;
+    }
+    &_description {
+      text-align: left;
+      font: normal normal normal 1.6rem/2.4rem "Noto Sans";
+      letter-spacing: 0px;
+      color: $color-gray;
+      //   margin-bottom: 46px;
+      max-width: 544px;
+    }
+    &_text {
+      margin-top: auto;
+      text-align: left;
+      font: normal normal normal 1.6rem/2.4rem "Noto Sans";
+      color: $color-lighGray;
+    }
+  }
+  &__quicklinks {
+    flex-basis: 146px;
+    display: flex;
+    flex-direction: column;
+    &_title {
+      text-align: left;
+      font: normal normal bold 2rem/2.4rem "Noto Sans";
+      color: $color-gray;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    &--link {
+      display: block;
+      text-decoration: none;
+      text-align: left;
+      font: normal normal normal 1.6rem/2.4rem "Noto Sans";
+      letter-spacing: 0px;
+      margin-top: 16px;
+      color: $color-gray;
+    }
+    &--link:hover {
+      color: $color-blue;
+    }
+  }
+  &__contact {
+    flex-basis: 192px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    &_social_wappper {
+      margin: auto 0 0 0;
+    }
+    &_title {
+      text-align: left;
+      font: normal normal bold 2rem/2.4rem "Noto Sans";
+      color: $color-gray;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    &_wrapper {
+      display: flex;
+      gap: 16px;
+      &_text {
+        text-align: left;
+        font: normal normal normal 1.6rem/2.4rem "Noto Sans";
+        color: $color-gray;
+      }
+    }
+    &_wrapper img {
+      @include respond(tablet) {
+        width: 20px;
+      }
+    }
+    &_titles {
+      margin-top: auto;
+      height: 100%;
+    }
+    &_socials {
+      align-self: flex-end;
+      display: flex;
+      gap: 8px;
+      &_container {
+        width: 32px;
+        height: 32px;
+        border: 1px solid #1f343e;
+        border-radius: 8px;
+        background-color: $color-blue;
+        display: flex;
+        @include respond(tablet) {
+          width: 25px;
+          height: 25px;
+        }
+        &--1 {
+          margin: auto;
+          cursor: pointer;
+          @include respond(tablet) {
+            width: 12px;
+          }
+        }
+      }
+    }
+  }
+}

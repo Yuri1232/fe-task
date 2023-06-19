@@ -1,0 +1,26 @@
+.input {
+  width: 100%;
+  max-width: 416px;
+  position: relative;
+}
+
+.input input {
+  width: inherit;
+  height: 64px;
+  border: 1px solid $color-gray;
+  border-radius: 8px;
+  padding: 0 0 0 60px;
+  @include respond(tablet) {
+    height: 50px;
+  }
+}
+
+.input img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 20px;
+  @include respond(tablet) {
+    width: 20px;
+  }
+}

@@ -1,0 +1,27 @@
+.app {
+  background-color: $color-primary;
+
+  &__body_wrapper {
+    height: 100%;
+    display: flex;
+    @include respond(phone) {
+      flex-wrap: wrap;
+    }
+
+    width: 100%;
+    justify-content: center;
+    margin-top: 6.4rem;
+
+    &--steps {
+      width: 100%;
+      max-width: 448px;
+
+      margin-left: 12rem;
+      margin-top: auto;
+      margin-bottom: auto;
+      @include respond(phone) {
+        margin: 36px;
+      }
+    }
+  }
+}
