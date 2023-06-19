@@ -8,6 +8,26 @@
   z-index: 9999;
   height: 80px;
   background-color: $color-white;
+  @include respond(phone) {
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+  &__menu_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__menu {
+    width: 24px;
+    height: 24px;
+  }
+  &__menu img {
+    width: inherit;
+  }
 
   &__nav {
     &--item {
@@ -30,5 +50,10 @@
     display: flex;
     flex-direction: row;
     gap: 4.1rem;
+  }
+  &__logo_container img {
+    @include respond(tablet) {
+      width: 120px;
+    }
   }
 }

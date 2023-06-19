@@ -10,6 +10,9 @@
   border: 1px solid $color-gray;
   border-radius: 8px;
   padding: 0 0 0 60px;
+  @include respond(tablet) {
+    height: 50px;
+  }
 }
 
 .input img {
@@ -17,4 +20,7 @@
   top: 50%;
   transform: translateY(-50%);
   margin: 0 20px;
+  @include respond(tablet) {
+    width: 20px;
+  }
 }

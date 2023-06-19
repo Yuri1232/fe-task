@@ -8,6 +8,13 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(tablet) {
+    font-size: 40%;
+  }
+  @include respond(phone) {
+    font-size: 50%;
+  }
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -15,7 +22,11 @@ body {
   height: 100vh;
 }
 
-// img {
-//   width: 100%;
-//   height: auto;
-// }
+img {
+  @include respond(tablet) {
+    width: 60px;
+  }
+  @include respond(phone) {
+    width: 120px;
+  }
+}

@@ -5,6 +5,11 @@
   background-color: $color-secondary;
   gap: 128px;
   height: 100%;
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 64px 30px;
+    gap: 64px;
+  }
   &__copyright {
     flex-grow: 1;
     display: flex;
@@ -78,9 +83,13 @@
         color: $color-gray;
       }
     }
+    &_wrapper img {
+      @include respond(tablet) {
+        width: 20px;
+      }
+    }
     &_titles {
       margin-top: auto;
-      display: block;
       height: 100%;
     }
     &_socials {
@@ -94,8 +103,16 @@
         border-radius: 8px;
         background-color: $color-blue;
         display: flex;
+        @include respond(tablet) {
+          width: 25px;
+          height: 25px;
+        }
         &--1 {
           margin: auto;
+          cursor: pointer;
+          @include respond(tablet) {
+            width: 12px;
+          }
         }
       }
     }

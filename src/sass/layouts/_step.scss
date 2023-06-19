@@ -7,6 +7,10 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(phone) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   &__num {
     text-align: left;
     color: $color-blue;
@@ -14,6 +18,9 @@
     margin-bottom: 16px;
     font-size: 2rem;
     font-weight: bold;
+    @include respond(phone) {
+      text-align: center;
+    }
   }
   &__wrapper_text {
     align-self: center;
@@ -25,6 +32,9 @@
     font-weight: normal;
     margin-bottom: 16px;
     align-self: center;
+    @include respond(phone) {
+      text-align: center;
+    }
   }
   &__wrapper_text p {
     font-size: 2rem;

@@ -14,6 +14,7 @@ const Store: React.FC<StoreProps> = () => {
         text="chrome web store"
         icon={ChromStoreIcon}
         alt="Chrom store"
+        link="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk"
       />
 
       <AppCard
@@ -21,9 +22,12 @@ const Store: React.FC<StoreProps> = () => {
         text="chrome web store"
         icon={AppStoreIcon}
         alt="Chrom store"
+        link="https://apps.apple.com/app/ratepunk/id1607823726"
       />
-      <img className="store__star" src={Star} alt="star review" />
-      <p className="store__review_text">Chrome Store reviews</p>
+      <div className="store__row">
+        <img className="store__star" src={Star} alt="star review" />
+        <p className="store__review_text">Chrome Store reviews</p>
+      </div>
     </div>
   );
 };

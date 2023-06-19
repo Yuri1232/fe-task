@@ -1,6 +1,7 @@
 import invite from "../assets/invite.svg";
 import collect from "../assets/collect-coins.svg";
 import voucher from "../assets/voucher.svg";
+
 import Instgram from "../assets/instagram.svg";
 import Facebook from "../assets/facebook.svg";
 import Linkedin from "../assets/linkedin.svg";
